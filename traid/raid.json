@@ -1,0 +1,6 @@
+{
+  "disks": 3,
+  "block_size": 4,
+  "disk_size": 16,
+  "failed_disk": null
+}
