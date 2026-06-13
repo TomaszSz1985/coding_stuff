@@ -1,20 +1,3 @@
-// ZADANIE: Napisz funkcję print_weather(response: &WeatherResponse).
-//
-// Powinna wyświetlić dane jako tabelkę używając crate'u `tabled`.
-// Kluczowe elementy:
-//   - zbuduj Vec<Row> gdzie Row to struct z polami: parametr, wartość, jednostka
-//   - Row musi mieć #[derive(Tabled)]
-//   - użyj tabled::Table::new(&rows).to_string() żeby wydrukować tabelkę
-//
-// Przykład wyjścia:
-// +------------------+-------+-------+
-// | Parametr         | Wartość | Jednostka |
-// +------------------+-------+-------+
-// | Temperatura      | 18.5  | °C    |
-// | Prędkość wiatru  | 12.3  | km/h  |
-// | Kod pogody       | 3     |       |
-// +------------------+-------+-------+
-
 use crate::models::WeatherResponse;
 use tabled::{Table, Tabled};
 
